@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptografia RSA</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Criptografia RSA</h1>
+  <div class="container">
+    <div class="box">
+      <h2>Gerar Chaves</h2>
+      <button id="generateKeys">Gerar Chaves RSA</button>
+      <p id="publicKeyDisplay"></p>
+      <p id="privateKeyDisplay"></p>
+    </div>
+    <div class="box">
+      <h2>Cifrar Mensagem</h2>
+      <textarea id="message" placeholder="Digite sua mensagem aqui"></textarea><br>
+      <button id="encrypt">Cifrar Mensagem</button>
+      <p><strong>Mensagem Cifrada:</strong> <span id="encryptedMessage"></span></p>
+    </div>
+    <div class="box">
+      <h2>Decifrar Mensagem</h2>
+      <button id="decrypt">Decifrar Mensagem</button>
+      <p><strong>Mensagem Decifrada:</strong> <span id="decryptedMessage"></span></p>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.10.0/forge.min.js"></script>
+</html>
